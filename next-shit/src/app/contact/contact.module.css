@@ -1,0 +1,150 @@
+.section{
+    /*background-color: red;*/
+}
+
+.container{
+    padding: 0 6rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1{
+    margin-top: 3.2rem;
+    font-size: 4.2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin: 6rem auto;
+}
+
+.grid_card{
+    padding: 2rem 4rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+}
+
+.grid_card span {
+    display: inline-block;
+    transition: transform 200ms;
+}
+
+.grid_card h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.grid_card p{
+    margin: 0;
+}
+
+.grid_card p:last-child{
+    margin-bottom: 3.2rem;
+}
+
+.grid_card .last_para{
+    margin-bottom: 3.2rem;
+}
+
+.grid_card i{
+    font-size: 4.2rem;
+    color: #e50914;
+}
+
+
+/*for the main contact two section*/
+
+.contact_section{
+    margin: 6rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.contact_section span{
+    color: #e50914;
+}
+
+.contact_form{
+    max-width: 48rem;
+    min-width: 32rem;
+    padding: 3.2rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: left;
+}
+
+.input_field{
+    margin-bottom: 2rem;
+}
+
+.label{
+    font-size: 1.5rem;
+    display: block;
+    text-transform: capitalize;
+}
+
+.contact_form input, .contact_form textarea{
+    display: block;
+    border: none;
+    width: 100%;
+    margin-top: .5rem;
+    padding: .8rem 1rem;
+    border-radius: .3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.success_msg{
+    color: #a8e48a;
+}
+
+.error_msg{
+    color: red;
+}
+
+
+.mapping{
+    width: 100%;
+}
+
+@media screen and (max-width: 999px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        margin: 6rem auto;
+    }
+
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        margin: 6rem auto;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

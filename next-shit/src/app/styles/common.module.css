@@ -1,0 +1,143 @@
+
+.section{
+    width: 100%;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+.movieSection{
+    background-color: #fff!important;
+}
+
+.container{
+    max-width: 140rem;
+    margin:0 auto;
+    padding: 6rem 3rem;
+}
+
+.grid_two_section{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 60rem;
+}
+
+.movieSection h1{
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.movie_title {
+    margin: 3.2rem 0 3.2rem 0;
+}
+
+.movie_title span{
+     color: #e50914;
+    text-transform: capitalize;
+}
+
+.card_section{
+    width: 100%;
+    display: flex;
+    gap: 4.8rem;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #90caf9;*/
+    flex-wrap: wrap;
+}
+
+.card{
+    max-width: 26rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: .8rem;
+    background-color: #fff;
+}
+
+.card_image img{
+    max-width: 100%;
+    height: auto;
+    border-top-right-radius: .8rem;
+    border-top-left-radius: .8rem;
+}
+
+.card_data{
+    padding: 1.2rem;
+}
+
+.card_data h2{
+    font-size: 2rem;
+}
+
+.card_data p{
+    margin: 1rem 0 2.4rem 0;
+    line-height: 1.6;
+}
+
+
+/*not found page styling */
+.error_page{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_page h2{
+    font-size: 4.8rem;
+}
+
+
+/*loading page style */
+
+.loading_section{
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+
+.loading {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.loading:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #e50914;
+    border-color: #e50914 transparent #e50914 transparent;
+    animation: loading 1.2s infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+
+
+
+@media screen and (max-width:768px) {
+    .grid_two_section{
+        grid-template-columns: 1fr;
+    }
+
+    .card_section{
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,111 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+/* Remove default margin and padding */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Add border box to images */
+img {
+    border: 0;
+}
+
+/*styling the text */
+
+h1 {
+    font-size: 5.8rem;
+    color: #161617;
+    font-weight: 900;
+}
+
+h2{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+}
+
+p, a, li {
+    font-size: 1.6rem;
+    /*line-height: 1.5;*/
+    margin: 2rem 0 4rem 0;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    line-height: 1.65;
+}
+
+/* Remove anchor text decoration */
+a {
+    text-decoration: none;
+    line-height: 0;
+}
+
+
+/* Remove list styles */
+ul,
+ol, li {
+    list-style: none;
+    margin: 0;
+}
+
+
+/*common styling across all the pages*/
+
+
+/* CSS */
+button {
+    background-color: #161617;
+    border-radius: 2.4rem;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    height: 4rem;
+    padding: .3rem 1.2rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    /*letter-spacing: -0.1rem;*/
+}
+
+button:hover {
+    background-color: #fff;
+    border: .1rem solid #161617;
+    color: #161617;
+    transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 0 2.6rem;
+    }
+}
+
